@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_50"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.ssit.www.bloodbank.activity.LoginActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/l_bg"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/red_400"
+        android:orientation="vertical"
+        android:weightSum="10"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="115dp"
+        android:layout_centerInParent="false"
+        android:layout_marginLeft="150dp"
+        android:src="@mipmap/ic_launcher_round"
+         />
+
+    </RelativeLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:padding="10dp"
+       android:orientation="vertical">
+
+       <android.support.design.widget.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+
+           >
+           <AutoCompleteTextView
+               android:id="@+id/actv_logemail"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Enter Your Email"
+               android:textColorHint="#000000"
+               android:inputType="textEmailAddress"
+               android:maxLines="1"
+               android:layout_marginLeft="16dp"
+               android:layout_marginRight="16dp"
+               android:drawableLeft="@android:drawable/ic_dialog_email"
+               android:drawablePadding="4dp"
+               />
+       </android.support.design.widget.TextInputLayout>
+
+       <android.support.design.widget.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+
+           >
+           <AutoCompleteTextView
+               android:id="@+id/actv_logpwd"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Enter your Password"
+               android:textColorHint="#000000"
+               android:inputType="textPassword"
+               android:maxLines="1"
+               android:layout_marginLeft="16dp"
+               android:layout_marginRight="16dp"
+               android:drawableLeft="@android:drawable/ic_dialog_email"
+               android:drawablePadding="4dp"
+               />
+       </android.support.design.widget.TextInputLayout>
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:padding="2dp"
+           android:text="Sihg"/>
+   </LinearLayout>
+
+</LinearLayout>
+
+
+

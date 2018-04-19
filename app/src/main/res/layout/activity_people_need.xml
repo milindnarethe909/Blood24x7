@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/red_400"
+    android:gravity="center">
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:background="?attr/colorPrimary"-->
+        <!--android:titleTextColor="@color/white"-->
+        <!--app:popupTheme="@style/AppTheme.PopupOverlay"-->
+        <!--android:backgroundTint="@color/red_700"/>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <EditText
+            android:id="@+id/ed_peopleCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_background"
+            android:layout_margin="8dp"
+            android:padding="10dp"
+            android:hint="City"
+            android:gravity="center"/>
+
+        <Spinner
+            android:id="@+id/sp_peopleBlood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:dropDownSelector="@color/white"/>
+
+        <Spinner
+            android:id="@+id/sp_peopleState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="24dp"
+            android:dropDownSelector="@color/white"
+            ></Spinner>
+
+        <Button
+            android:id="@+id/bt_searchPeople"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/red_400"
+            android:textAllCaps="false"
+            android:background="@color/white"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

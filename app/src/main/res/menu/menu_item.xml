@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menuProfile"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/menuContact"
+        android:title="Contact Us"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:orderInCategory="100"
+        />
+
+    <item
+        android:id="@+id/menuLogout"
+        android:title="Logout"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_exit_to_app_black_24dp"/>
+
+
+    <item
+        android:id="@+id/menuHelp"
+        android:title="Help"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_help_black_24dp"
+        />
+
+
+</menu>

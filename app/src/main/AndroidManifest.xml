@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ssit.www.bloodbank">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/blood_500"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/blood_500"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.Splash_Screen_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.RegistrationActivity" android:screenOrientation="portrait" />
+        <activity android:name=".activity.OTPActivity" android:screenOrientation="portrait" />
+        <activity android:name=".activity.MainActivity" android:screenOrientation="portrait" />
+        <activity android:name=".activity.ForgetPassword" android:screenOrientation="portrait" />
+        <activity android:name=".activity.Search_Activity" android:screenOrientation="portrait" />
+        <activity android:name=".activity.ProfileActivity" android:screenOrientation="portrait" />
+        <activity android:name=".activity.Contact_Us_Activity" android:screenOrientation="portrait" />
+        <activity android:name=".activity.MapsActivity" android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCS72LdXEBgOVFO_Vg15F5CIc18i60kB_A" />
+
+        <activity android:name=".activity.DashBoard"  android:screenOrientation="portrait" />
+        <activity android:name=".activity.AllBloodBank" android:screenOrientation="portrait" />
+        <activity android:name=".activity.PeopleInNeed" android:screenOrientation="portrait" />
+        <activity android:name=".activity.ReminderActivity" android:screenOrientation="portrait"  />
+
+        <service android:name=".NotificationService.NotifyService" />
+        <service android:name=".NotificationService.ScheduleService" />
+
+        <activity android:name=".activity.LoginActivity" android:screenOrientation="portrait" ></activity>
+    </application>
+
+</manifest>
